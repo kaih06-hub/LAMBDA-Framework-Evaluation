@@ -1,0 +1,15 @@
+.venv/
+venv/
+__pycache__/
+.DS_Store
+.ipynb_checkpoints/
+*.pyc
+outputs/
+data/
+config.ini
+*.mp4
+**/*.mp4
+**/Zoom Meeting/
+.env
+# Ignore docker volumes if they are stored locally
+workdir/

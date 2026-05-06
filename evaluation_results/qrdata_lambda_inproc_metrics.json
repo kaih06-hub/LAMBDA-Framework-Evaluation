@@ -1,0 +1,14 @@
+{
+  "total_samples": 50,
+  "successful_samples": 50,
+  "error_samples": 0,
+  "samples_with_ground_truth": 50,
+  "success_rate": 1.0,
+  "average_execution_time": 13.41424807548523,
+  "average_turns": 1.9,
+  "exact_match_mean": 0.7,
+  "exact_match_min": 0.0,
+  "exact_match_max": 1.0,
+  "exact_match_count": 50,
+  "exact_match_evaluable_count": 50
+}

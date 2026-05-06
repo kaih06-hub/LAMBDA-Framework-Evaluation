@@ -1,0 +1,8 @@
+category,count,pct
+clean,0,0.0
+early_exit_recovered,0,0.0
+early_exit_failed,0,0.0
+verbal_execution_divergence,0,0.0
+crash,0,0.0
+other_failure,0,0.0
+unknown,0,0.0

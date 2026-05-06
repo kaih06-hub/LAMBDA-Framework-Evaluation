@@ -1,0 +1,70 @@
+sample_id,dataset_name,query,ground_truth,prediction,success,execution_time,total_turns,has_ground_truth,metric_exact_match
+qrdata_original_qrdata_0_0,qrdata_original,Compute the proportion of patients in the treatment group who had a stroke by the end of their first...,0.20,0.2,True,9.242642879486084,2,True,1.0
+qrdata_original_qrdata_1_1,qrdata_original,What proportion of patients in the treatment group were pain free 24 hours after receiving acupunctu...,0.23,0.23,True,8.540616989135742,2,True,1.0
+qrdata_original_qrdata_2_2,qrdata_original,What proportion of patients in the treatment group experienced improvement in symptoms? Please round...,0.78,0.78,True,34.62545609474182,2,True,1.0
+qrdata_original_qrdata_3_3,qrdata_original,What proportion of patients in the control group experienced improvement in symptoms? Please round t...,0.80,0.8,True,9.24922776222229,2,True,1.0
+qrdata_original_qrdata_4_4,qrdata_original,In which group did a higher percentage of patients experience improvement in symptoms? Please answer...,control group,"```python
+# Determine the group with the higher percentage of improvement
+higher_improvement_group = improvement_percentages.idxmax()
+
+# Map group name to the required output format
+answer_map = {
+    'treatment': 'treatment group',
+    'control': 'control group'
+}
+
+higher_improvement_group, answer_map[higher_improvement_group]
+```
+🖥️ Execute code...<details style=""border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;""><summary style=""font-weight: bold; cursor: pointer;"">✅Click to view execution results</summary><pre>(&#x27;control&#x27;, &#x27;control group&#x27;)</pre></details>| Group with higher improvement | Answer         |
+|-------------------------------|----------------|
+| control                       | control group  |
+
+The control group had a higher percentage of patients experiencing improvement in symptoms compared to the treatment group. Therefore, based on this data, the ""control group"" showed better symptom improvement.
+
+Next, you can:
+<div><button class='suggestion-btn'>Perform a statistical significance test such as a chi-square test to confirm if the difference is statistically significant.</button><button class='suggestion-btn'>Analyze additional variables or patient characteristics to understand factors influencing improvement.</button><button class='suggestion-btn'>Create visualizations like bar plots to clearly communicate the comparison of improvement percentages between groups.</button></div>",True,13.754751920700073,3,True,0.0
+qrdata_original_qrdata_5_5,qrdata_original,How many participants were included in the survey?,1691,1691.0,True,4.10673189163208,1,True,1.0
+qrdata_original_qrdata_6_6,qrdata_original,Estimate the median AQI value of this sample. Please round to the nearest integer.,30,30.0,True,14.311777114868164,2,True,1.0
+qrdata_original_qrdata_7_7,qrdata_original,Estimate the interquartile range of AQI in this sample. Please round to the nearest hundredth.,19.50,19.5,True,16.710628986358643,2,True,1.0
+qrdata_original_qrdata_8_8,qrdata_original,"What proportion of these Tampa, FL voters identify themselves as conservatives? Please round to the ...",0.41,0.41,True,5.874661922454834,2,True,1.0
+qrdata_original_qrdata_9_9,qrdata_original,"What proportion of these Tampa, FL voters identify themselves as conservatives and are in favor of t...",0.06,0.06,True,8.344796895980835,2,True,1.0
+qrdata_original_qrdata_10_10,qrdata_original,"What proportion of these Tampa, FL voters who identify themselves as conservatives are also in favor...",0.15,0.15,True,27.358306884765625,1,True,1.0
+qrdata_original_qrdata_11_11,qrdata_original,Determine if the following statement is true or false. Be careful: The reasoning may be wrong even i...,true,0.0,True,14.928436040878296,2,True,0.0
+qrdata_original_qrdata_12_12,qrdata_original,What proportion of all patients had cardiovascular problems? Please round to the nearest thousandth.,0.035,0.04,True,32.27687311172485,1,True,0.0
+qrdata_original_qrdata_13_13,qrdata_original,"If the type of treatment and having cardiovascular problems were independent, about how many patient...",2370,2370.0,True,10.295897006988525,2,True,1.0
+qrdata_original_qrdata_14_14,qrdata_original,How much higher is the proportion of deaths in the control group than in the treatment group? Please...,0.23,0.23,True,39.462905168533325,3,True,1.0
+qrdata_original_qrdata_15_15,qrdata_original,Estimate the first quartile (Q1) of the infant death rate. Please round to the nearest hundredth.,6.51,6.5,True,7.588634967803955,2,True,1.0
+qrdata_original_qrdata_16_16,qrdata_original,Estimate the third quartile (Q3) of the infant death rate. Please round to the nearest hundredth.,42.14,42.14,True,9.224336862564087,2,True,1.0
+qrdata_original_qrdata_17_17,qrdata_original,Compute the probability a randomly selected loan from the data set is for someone who has a mortgage...,0.61,0.61,True,4.930350303649902,1,True,1.0
+qrdata_original_qrdata_18_18,qrdata_original,Determine the probability a randomly drawn loan from the data set is from a joint application where ...,0.095,3.0,True,5.490763902664185,1,True,0.0
+qrdata_original_qrdata_19_19,qrdata_original,What is the difference in infection rates between the placebo and vaccine groups? Please round to th...,0.643,0.64,True,6.589828014373779,2,True,1.0
+qrdata_original_qrdata_20_20,qrdata_original,What is the probability a randomly selected person who was not inoculated died from smallpox? Please...,0.141,0.14,True,7.838655948638916,2,True,1.0
+qrdata_original_qrdata_21_21,qrdata_original,Determine the probability that an inoculated person died from smallpox. Please round to the nearest ...,0.025,0.03,True,6.632905960083008,2,True,0.0
+qrdata_original_qrdata_22_22,qrdata_original,What is the probability that a randomly chosen respondent believes the earth is warming or is a libe...,0.62,0.62,True,11.71299409866333,2,True,1.0
+qrdata_original_qrdata_23_23,qrdata_original,What is the probability that a randomly chosen respondent believes the earth is warming given that h...,0.90,0.9,True,9.854552030563354,2,True,1.0
+qrdata_original_qrdata_24_24,qrdata_original,What is the probability that a randomly chosen respondent believes the earth is warming given that h...,0.33,0.33,True,8.77287220954895,2,True,1.0
+qrdata_original_qrdata_25_25,qrdata_original,What is the probability that a randomly chosen respondent is a moderate/liberal Republican given tha...,0.18,2.0,True,9.396117925643921,2,True,0.0
+qrdata_original_qrdata_26_26,qrdata_original,What is the probability that a randomly chosen male likes In-N-Out the best? Please round to the nea...,0.65,0.65,True,7.621617794036865,2,True,1.0
+qrdata_original_qrdata_27_27,qrdata_original,What is the probability that a randomly chosen female likes In-N-Out the best? Please round to the n...,0.72,0.72,True,7.408276319503784,2,True,1.0
+qrdata_original_qrdata_28_28,qrdata_original,What is the probability that a randomly chosen person likes Umami best or that person is female? Ple...,0.51,0.51,True,7.271945953369141,2,True,1.0
+qrdata_original_qrdata_29_29,qrdata_original,What is the probability that a randomly chosen male respondent or his partner has blue eyes? Please ...,0.71,0.71,True,8.068536043167114,2,True,1.0
+qrdata_original_qrdata_30_30,qrdata_original,What is the probability that a randomly chosen male respondent with blue eyes has a partner with blu...,0.68,0.68,True,8.210812330245972,2,True,1.0
+qrdata_original_qrdata_31_31,qrdata_original,What is the probability of a randomly chosen male respondent with green eyes having a partner with b...,0.31,0.31,True,9.666950941085815,2,True,1.0
+qrdata_original_qrdata_32_32,qrdata_original,What proportion of the sample is between 180 cm and 185 cm tall? Please round to the nearest thousan...,0.117,0.12,True,11.836925268173218,2,True,1.0
+qrdata_original_qrdata_33_33,qrdata_original,Three US adults are randomly selected. What is the probability that all three are between 180 and 18...,0.002,0.0,True,9.566129922866821,2,True,0.0
+qrdata_original_qrdata_34_34,qrdata_original,Three US adults are randomly selected. What is the probability that none are between 180 and 185 cm ...,0.69,0.69,True,8.863524913787842,2,True,1.0
+qrdata_original_qrdata_35_35,qrdata_original,Use a Poisson distribution to approximate the data. What is the event rate of the Poisson distributi...,4.4,4.4,True,5.775342226028442,1,True,1.0
+qrdata_original_qrdata_36_36,qrdata_original,Calculate the lower bound of a 99% confidence interval for the level of American support for expandi...,0.819,0.83,True,18.077450037002563,1,True,1.0
+qrdata_original_qrdata_37_37,qrdata_original,What is the point estimate in this case? Please round to the nearest hundredth.,0.82,0.82,True,8.878624200820923,2,True,1.0
+qrdata_original_qrdata_38_38,qrdata_original,Estimate the standard error of the point estimate from the Ebola survey. Please round to the nearest...,0.012,0.01,True,9.146163940429688,2,True,0.0
+qrdata_original_qrdata_39_39,qrdata_original,"Construct a 95% confidence interval for p, the proportion of New York adults who supported a quarant...",0.796,0.8,True,8.458370923995972,2,True,1.0
+qrdata_original_qrdata_40_40,qrdata_original,"Construct a 95% confidence interval for p, the proportion of New York adults who supported a quarant...",0.844,0.84,True,8.513278007507324,2,True,1.0
+qrdata_original_qrdata_41_41,qrdata_original,Compute the upper bound of a 95% confidence interval for the fraction of college-educated adults who...,0.358,0.36,True,7.852524042129517,2,True,1.0
+qrdata_original_qrdata_42_42,qrdata_original,Calculate the lower bound of the 90% confidence interval of the difference for the survival rates in...,-0.026,-0.03,True,44.34923481941223,1,True,0.0
+qrdata_original_qrdata_43_43,qrdata_original,Calculate the length of the 95% confidence interval for the effect of fish oils on heart attacks for...,0.006,0.01,True,15.079013109207153,2,True,0.0
+qrdata_original_qrdata_44_44,qrdata_original,Calculate the lower bound of the 95% confidence interval for the effect of fish oils on heart attack...,-0.007,-0.01,True,71.69250512123108,2,True,0.0
+qrdata_original_qrdata_45_45,qrdata_original,"Is this study an experiment or an observational study? Please answer with ""experiment"" or ""observati...",experiment,2.0,True,14.241616010665894,3,True,0.0
+qrdata_original_qrdata_46_46,qrdata_original,Compute the absolute value of the point estimate of the difference in breast cancer death rates in t...,0.00012,0.0,True,15.696830987930298,2,True,0.0
+qrdata_original_qrdata_47_47,qrdata_original,Compute the standard error of the point estimate of the difference in breast cancer death rates in t...,0.00070,0.0,True,8.957018852233887,2,True,0.0
+qrdata_original_qrdata_48_48,qrdata_original,Calculate a p-value for the hypothesis that there was no difference in breast cancer deaths in the m...,0.8650,0.87,True,8.717257022857666,2,True,1.0
+qrdata_original_qrdata_49_49,qrdata_original,Given the hypothesis that the higher-quality blades will pass inspection 3% more frequently than the...,0.012,64.0,True,9.646732091903687,2,True,0.0

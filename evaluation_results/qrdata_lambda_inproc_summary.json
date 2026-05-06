@@ -1,0 +1,1804 @@
+[
+  {
+    "sample_id": "qrdata_original_qrdata_0_0",
+    "dataset_name": "qrdata_original",
+    "query": "Compute the proportion of patients in the treatment group who had a stroke by the end of their first year. Please round to the nearest hundredth.",
+    "ground_truth": "0.20",
+    "prediction": "0.2",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.2",
+          "ground_truth_normalized": "0.20",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 1.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 0.2,
+          "ground_truth_number": 0.2,
+          "relative_error": 0.0
+        },
+        "evaluation_time": 0.0003578662872314453,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 9.242642879486084,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "Compute the proportion of patients in the treatment group who had a stroke by the end of their first year. Please round to the nearest hundredth.",
+      "ground_truth": "0.20",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_0",
+      "query_id": "0",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_1_1",
+    "dataset_name": "qrdata_original",
+    "query": "What proportion of patients in the treatment group were pain free 24 hours after receiving acupuncture? Please round to the nearest hundredth.",
+    "ground_truth": "0.23",
+    "prediction": "0.23",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.23",
+          "ground_truth_normalized": "0.23",
+          "exact_string_match": true
+        },
+        "evaluation_time": 1.6927719116210938e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 8.540616989135742,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "What proportion of patients in the treatment group were pain free 24 hours after receiving acupuncture? Please round to the nearest hundredth.",
+      "ground_truth": "0.23",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_1",
+      "query_id": "1",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_2_2",
+    "dataset_name": "qrdata_original",
+    "query": "What proportion of patients in the treatment group experienced improvement in symptoms? Please round to the nearest hundredth.",
+    "ground_truth": "0.78",
+    "prediction": "0.78",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.78",
+          "ground_truth_normalized": "0.78",
+          "exact_string_match": true
+        },
+        "evaluation_time": 3.2901763916015625e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 34.62545609474182,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "What proportion of patients in the treatment group experienced improvement in symptoms? Please round to the nearest hundredth.",
+      "ground_truth": "0.78",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_2",
+      "query_id": "2",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_3_3",
+    "dataset_name": "qrdata_original",
+    "query": "What proportion of patients in the control group experienced improvement in symptoms? Please round to the nearest hundredth.",
+    "ground_truth": "0.80",
+    "prediction": "0.8",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.8",
+          "ground_truth_normalized": "0.80",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 1.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 0.8,
+          "ground_truth_number": 0.8,
+          "relative_error": 0.0
+        },
+        "evaluation_time": 0.00028228759765625,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 9.24922776222229,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "What proportion of patients in the control group experienced improvement in symptoms? Please round to the nearest hundredth.",
+      "ground_truth": "0.80",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_3",
+      "query_id": "3",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_4_4",
+    "dataset_name": "qrdata_original",
+    "query": "In which group did a higher percentage of patients experience improvement in symptoms? Please answer with \"treatment group\" or \"control group\".",
+    "ground_truth": "control group",
+    "prediction": "```python\n# Determine the group with the higher percentage of improvement\nhigher_improvement_group = improvement_percentages.idxmax()\n\n# Map group name to the required output format\nanswer_map = {\n    'treatment': 'treatment group',\n    'control': 'control group'\n}\n\nhigher_improvement_group, answer_map[higher_improvement_group]\n```\n🖥️ Execute code...<details style=\"border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;\"><summary style=\"font-weight: bold; cursor: pointer;\">✅Click to view execution results</summary><pre>(&#x27;control&#x27;, &#x27;control group&#x27;)</pre></details>| Group with higher improvement | Answer         |\n|-------------------------------|----------------|\n| control                       | control group  |\n\nThe control group had a higher percentage of patients experiencing improvement in symptoms compared to the treatment group. Therefore, based on this data, the \"control group\" showed better symptom improvement.\n\nNext, you can:\n<div><button class='suggestion-btn'>Perform a statistical significance test such as a chi-square test to confirm if the difference is statistically significant.</button><button class='suggestion-btn'>Analyze additional variables or patient characteristics to understand factors influencing improvement.</button><button class='suggestion-btn'>Create visualizations like bar plots to clearly communicate the comparison of improvement percentages between groups.</button></div>",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 0.0,
+        "details": {
+          "prediction_normalized": "```python\n# determine the group with the higher percentage of improvement\nhigher_improvement_group = improvement_percentages.idxmax()\n\n# map group name to the required output format\nanswer_map = {\n    'treatment': 'treatment group',\n    'control': 'control group'\n}\n\nhigher_improvement_group, answer_map[higher_improvement_group]\n```\n🖥️ execute code...<details style=\"border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;\"><summary style=\"font-weight: bold; cursor: pointer;\">✅click to view execution results</summary><pre>(&#x27;control&#x27;, &#x27;control group&#x27;)</pre></details>| group with higher improvement | answer         |\n|-------------------------------|----------------|\n| control                       | control group  |\n\nthe control group had a higher percentage of patients experiencing improvement in symptoms compared to the treatment group. therefore, based on this data, the \"control group\" showed better symptom improvement.\n\nnext, you can:\n<div><button class='suggestion-btn'>perform a statistical significance test such as a chi-square test to confirm if the difference is statistically significant.</button><button class='suggestion-btn'>analyze additional variables or patient characteristics to understand factors influencing improvement.</button><button class='suggestion-btn'>create visualizations like bar plots to clearly communicate the comparison of improvement percentages between groups.</button></div>",
+          "ground_truth_normalized": "control group",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": false
+        },
+        "evaluation_time": 0.00015115737915039062,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 13.754751920700073,
+    "total_turns": 3,
+    "success": true,
+    "extra_info": {
+      "query": "In which group did a higher percentage of patients experience improvement in symptoms? Please answer with \"treatment group\" or \"control group\".",
+      "ground_truth": "control group",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_4",
+      "query_id": "4",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_5_5",
+    "dataset_name": "qrdata_original",
+    "query": "How many participants were included in the survey?",
+    "ground_truth": "1691",
+    "prediction": "1691.0",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "1691.0",
+          "ground_truth_normalized": "1691",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 1.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 1691.0,
+          "ground_truth_number": 1691.0,
+          "relative_error": 0.0
+        },
+        "evaluation_time": 9.703636169433594e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 4.10673189163208,
+    "total_turns": 1,
+    "success": true,
+    "extra_info": {
+      "query": "How many participants were included in the survey?",
+      "ground_truth": "1691",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_5",
+      "query_id": "5",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_6_6",
+    "dataset_name": "qrdata_original",
+    "query": "Estimate the median AQI value of this sample. Please round to the nearest integer.",
+    "ground_truth": "30",
+    "prediction": "30.0",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "30.0",
+          "ground_truth_normalized": "30",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 1.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 30.0,
+          "ground_truth_number": 30.0,
+          "relative_error": 0.0
+        },
+        "evaluation_time": 0.00019884109497070312,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 14.311777114868164,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "Estimate the median AQI value of this sample. Please round to the nearest integer.",
+      "ground_truth": "30",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_6",
+      "query_id": "6",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_7_7",
+    "dataset_name": "qrdata_original",
+    "query": "Estimate the interquartile range of AQI in this sample. Please round to the nearest hundredth.",
+    "ground_truth": "19.50",
+    "prediction": "19.5",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "19.5",
+          "ground_truth_normalized": "19.50",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 1.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 19.5,
+          "ground_truth_number": 19.5,
+          "relative_error": 0.0
+        },
+        "evaluation_time": 0.00017309188842773438,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 16.710628986358643,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "Estimate the interquartile range of AQI in this sample. Please round to the nearest hundredth.",
+      "ground_truth": "19.50",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_7",
+      "query_id": "7",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_8_8",
+    "dataset_name": "qrdata_original",
+    "query": "What proportion of these Tampa, FL voters identify themselves as conservatives? Please round to the nearest hundredth.",
+    "ground_truth": "0.41",
+    "prediction": "0.41",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.41",
+          "ground_truth_normalized": "0.41",
+          "exact_string_match": true
+        },
+        "evaluation_time": 4.57763671875e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 5.874661922454834,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "What proportion of these Tampa, FL voters identify themselves as conservatives? Please round to the nearest hundredth.",
+      "ground_truth": "0.41",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_8",
+      "query_id": "8",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_9_9",
+    "dataset_name": "qrdata_original",
+    "query": "What proportion of these Tampa, FL voters identify themselves as conservatives and are in favor of the citizenship option? Please round to the nearest hundredth.",
+    "ground_truth": "0.06",
+    "prediction": "0.06",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.06",
+          "ground_truth_normalized": "0.06",
+          "exact_string_match": true
+        },
+        "evaluation_time": 4.601478576660156e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 8.344796895980835,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "What proportion of these Tampa, FL voters identify themselves as conservatives and are in favor of the citizenship option? Please round to the nearest hundredth.",
+      "ground_truth": "0.06",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_9",
+      "query_id": "9",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_10_10",
+    "dataset_name": "qrdata_original",
+    "query": "What proportion of these Tampa, FL voters who identify themselves as conservatives are also in favor of the citizenship option? Please round to the nearest hundredth.",
+    "ground_truth": "0.15",
+    "prediction": "0.15",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.15",
+          "ground_truth_normalized": "0.15",
+          "exact_string_match": true
+        },
+        "evaluation_time": 6.794929504394531e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 27.358306884765625,
+    "total_turns": 1,
+    "success": true,
+    "extra_info": {
+      "query": "What proportion of these Tampa, FL voters who identify themselves as conservatives are also in favor of the citizenship option? Please round to the nearest hundredth.",
+      "ground_truth": "0.15",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_10",
+      "query_id": "10",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_11_11",
+    "dataset_name": "qrdata_original",
+    "query": "Determine if the following statement is true or false. Be careful: The reasoning may be wrong even if the statement's conclusion is correct. In such cases, the statement should be considered false. Answer with \"true\" or \"false\".\nStatement: The data suggest that diabetic patients who are taking rosiglitazone are more likely to have cardiovascular problems since the rate of incidence was (2,593 / 67,593 = 0.038) 3.8% for patients on this treatment, while it was only (5,386 / 159,978 = 0.034) 3.4% for patients on pioglitazone.",
+    "ground_truth": "true",
+    "prediction": "0.0",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 0.0,
+        "details": {
+          "prediction_normalized": "0.0",
+          "ground_truth_normalized": "true",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": false
+        },
+        "evaluation_time": 0.0002949237823486328,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 14.928436040878296,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "Determine if the following statement is true or false. Be careful: The reasoning may be wrong even if the statement's conclusion is correct. In such cases, the statement should be considered false. Answer with \"true\" or \"false\".\nStatement: The data suggest that diabetic patients who are taking rosiglitazone are more likely to have cardiovascular problems since the rate of incidence was (2,593 / 67,593 = 0.038) 3.8% for patients on this treatment, while it was only (5,386 / 159,978 = 0.034) 3.4% for patients on pioglitazone.",
+      "ground_truth": "true",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_11",
+      "query_id": "11",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_12_12",
+    "dataset_name": "qrdata_original",
+    "query": "What proportion of all patients had cardiovascular problems? Please round to the nearest thousandth.",
+    "ground_truth": "0.035",
+    "prediction": "0.04",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 0.0,
+        "details": {
+          "prediction_normalized": "0.04",
+          "ground_truth_normalized": "0.035",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 0.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 0.04,
+          "ground_truth_number": 0.035,
+          "relative_error": 0.14285714285714277
+        },
+        "evaluation_time": 8.606910705566406e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 32.27687311172485,
+    "total_turns": 1,
+    "success": true,
+    "extra_info": {
+      "query": "What proportion of all patients had cardiovascular problems? Please round to the nearest thousandth.",
+      "ground_truth": "0.035",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_12",
+      "query_id": "12",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_13_13",
+    "dataset_name": "qrdata_original",
+    "query": "If the type of treatment and having cardiovascular problems were independent, about how many patients in the rosiglitazone group would we expect to have had cardiovascular problems? Please round to the nearest integer.",
+    "ground_truth": "2370",
+    "prediction": "2370.0",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "2370.0",
+          "ground_truth_normalized": "2370",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 1.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 2370.0,
+          "ground_truth_number": 2370.0,
+          "relative_error": 0.0
+        },
+        "evaluation_time": 0.00017786026000976562,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 10.295897006988525,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "If the type of treatment and having cardiovascular problems were independent, about how many patients in the rosiglitazone group would we expect to have had cardiovascular problems? Please round to the nearest integer.",
+      "ground_truth": "2370",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_13",
+      "query_id": "13",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_14_14",
+    "dataset_name": "qrdata_original",
+    "query": "How much higher is the proportion of deaths in the control group than in the treatment group? Please round to the nearest hundredth.",
+    "ground_truth": "0.23",
+    "prediction": "0.23",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.23",
+          "ground_truth_normalized": "0.23",
+          "exact_string_match": true
+        },
+        "evaluation_time": 3.62396240234375e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 39.462905168533325,
+    "total_turns": 3,
+    "success": true,
+    "extra_info": {
+      "query": "How much higher is the proportion of deaths in the control group than in the treatment group? Please round to the nearest hundredth.",
+      "ground_truth": "0.23",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_14",
+      "query_id": "14",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_15_15",
+    "dataset_name": "qrdata_original",
+    "query": "Estimate the first quartile (Q1) of the infant death rate. Please round to the nearest hundredth.",
+    "ground_truth": "6.51",
+    "prediction": "6.5",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "6.5",
+          "ground_truth_normalized": "6.51",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 1.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 6.5,
+          "ground_truth_number": 6.51,
+          "relative_error": 0.001536098310291826
+        },
+        "evaluation_time": 0.00022912025451660156,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 7.588634967803955,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "Estimate the first quartile (Q1) of the infant death rate. Please round to the nearest hundredth.",
+      "ground_truth": "6.51",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_15",
+      "query_id": "15",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_16_16",
+    "dataset_name": "qrdata_original",
+    "query": "Estimate the third quartile (Q3) of the infant death rate. Please round to the nearest hundredth.",
+    "ground_truth": "42.14",
+    "prediction": "42.14",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "42.14",
+          "ground_truth_normalized": "42.14",
+          "exact_string_match": true
+        },
+        "evaluation_time": 3.504753112792969e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 9.224336862564087,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "Estimate the third quartile (Q3) of the infant death rate. Please round to the nearest hundredth.",
+      "ground_truth": "42.14",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_16",
+      "query_id": "16",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_17_17",
+    "dataset_name": "qrdata_original",
+    "query": "Compute the probability a randomly selected loan from the data set is for someone who has a mortgage or owns her home. Please round to the nearest hundredth.",
+    "ground_truth": "0.61",
+    "prediction": "0.61",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.61",
+          "ground_truth_normalized": "0.61",
+          "exact_string_match": true
+        },
+        "evaluation_time": 2.4080276489257812e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 4.930350303649902,
+    "total_turns": 1,
+    "success": true,
+    "extra_info": {
+      "query": "Compute the probability a randomly selected loan from the data set is for someone who has a mortgage or owns her home. Please round to the nearest hundredth.",
+      "ground_truth": "0.61",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_17",
+      "query_id": "17",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_18_18",
+    "dataset_name": "qrdata_original",
+    "query": "Determine the probability a randomly drawn loan from the data set is from a joint application where the couple had a mortgage. Please round to the nearest thousandth.",
+    "ground_truth": "0.095",
+    "prediction": "3.0",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 0.0,
+        "details": {
+          "prediction_normalized": "3.0",
+          "ground_truth_normalized": "0.095",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 0.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 3.0,
+          "ground_truth_number": 0.095,
+          "relative_error": 30.57894736842105
+        },
+        "evaluation_time": 0.00012302398681640625,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 5.490763902664185,
+    "total_turns": 1,
+    "success": true,
+    "extra_info": {
+      "query": "Determine the probability a randomly drawn loan from the data set is from a joint application where the couple had a mortgage. Please round to the nearest thousandth.",
+      "ground_truth": "0.095",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_18",
+      "query_id": "18",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_19_19",
+    "dataset_name": "qrdata_original",
+    "query": "What is the difference in infection rates between the placebo and vaccine groups? Please round to the nearest thousandth.",
+    "ground_truth": "0.643",
+    "prediction": "0.64",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.64",
+          "ground_truth_normalized": "0.643",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 1.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 0.64,
+          "ground_truth_number": 0.643,
+          "relative_error": 0.004665629860031108
+        },
+        "evaluation_time": 0.00022077560424804688,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 6.589828014373779,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "What is the difference in infection rates between the placebo and vaccine groups? Please round to the nearest thousandth.",
+      "ground_truth": "0.643",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_19",
+      "query_id": "19",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_20_20",
+    "dataset_name": "qrdata_original",
+    "query": "What is the probability a randomly selected person who was not inoculated died from smallpox? Please round to the nearest thousandth.",
+    "ground_truth": "0.141",
+    "prediction": "0.14",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.14",
+          "ground_truth_normalized": "0.141",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 1.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 0.14,
+          "ground_truth_number": 0.141,
+          "relative_error": 0.0070921985815600936
+        },
+        "evaluation_time": 0.00023293495178222656,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 7.838655948638916,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "What is the probability a randomly selected person who was not inoculated died from smallpox? Please round to the nearest thousandth.",
+      "ground_truth": "0.141",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_20",
+      "query_id": "20",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_21_21",
+    "dataset_name": "qrdata_original",
+    "query": "Determine the probability that an inoculated person died from smallpox. Please round to the nearest thousandth.",
+    "ground_truth": "0.025",
+    "prediction": "0.03",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 0.0,
+        "details": {
+          "prediction_normalized": "0.03",
+          "ground_truth_normalized": "0.025",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 0.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 0.03,
+          "ground_truth_number": 0.025,
+          "relative_error": 0.1999999999999999
+        },
+        "evaluation_time": 0.0002586841583251953,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 6.632905960083008,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "Determine the probability that an inoculated person died from smallpox. Please round to the nearest thousandth.",
+      "ground_truth": "0.025",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_21",
+      "query_id": "21",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_22_22",
+    "dataset_name": "qrdata_original",
+    "query": "What is the probability that a randomly chosen respondent believes the earth is warming or is a liberal Democrat? Please round to the nearest hundredth.",
+    "ground_truth": "0.62",
+    "prediction": "0.62",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.62",
+          "ground_truth_normalized": "0.62",
+          "exact_string_match": true
+        },
+        "evaluation_time": 3.1948089599609375e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 11.71299409866333,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "What is the probability that a randomly chosen respondent believes the earth is warming or is a liberal Democrat? Please round to the nearest hundredth.",
+      "ground_truth": "0.62",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_22",
+      "query_id": "22",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_23_23",
+    "dataset_name": "qrdata_original",
+    "query": "What is the probability that a randomly chosen respondent believes the earth is warming given that he is a liberal Democrat? Please round to the nearest hundredth.",
+    "ground_truth": "0.90",
+    "prediction": "0.9",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.9",
+          "ground_truth_normalized": "0.90",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 1.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 0.9,
+          "ground_truth_number": 0.9,
+          "relative_error": 0.0
+        },
+        "evaluation_time": 0.0002841949462890625,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 9.854552030563354,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "What is the probability that a randomly chosen respondent believes the earth is warming given that he is a liberal Democrat? Please round to the nearest hundredth.",
+      "ground_truth": "0.90",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_23",
+      "query_id": "23",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_24_24",
+    "dataset_name": "qrdata_original",
+    "query": "What is the probability that a randomly chosen respondent believes the earth is warming given that he is a conservative Republican? Please round to the nearest hundredth.",
+    "ground_truth": "0.33",
+    "prediction": "0.33",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.33",
+          "ground_truth_normalized": "0.33",
+          "exact_string_match": true
+        },
+        "evaluation_time": 5.817413330078125e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 8.77287220954895,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "What is the probability that a randomly chosen respondent believes the earth is warming given that he is a conservative Republican? Please round to the nearest hundredth.",
+      "ground_truth": "0.33",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_24",
+      "query_id": "24",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_25_25",
+    "dataset_name": "qrdata_original",
+    "query": "What is the probability that a randomly chosen respondent is a moderate/liberal Republican given that he does not believe that the earth is warming? Please round to the nearest hundredth.",
+    "ground_truth": "0.18",
+    "prediction": "2.0",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 0.0,
+        "details": {
+          "prediction_normalized": "2.0",
+          "ground_truth_normalized": "0.18",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 0.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 2.0,
+          "ground_truth_number": 0.18,
+          "relative_error": 10.111111111111112
+        },
+        "evaluation_time": 0.00023603439331054688,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 9.396117925643921,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "What is the probability that a randomly chosen respondent is a moderate/liberal Republican given that he does not believe that the earth is warming? Please round to the nearest hundredth.",
+      "ground_truth": "0.18",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_25",
+      "query_id": "25",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_26_26",
+    "dataset_name": "qrdata_original",
+    "query": "What is the probability that a randomly chosen male likes In-N-Out the best? Please round to the nearest hundredth.",
+    "ground_truth": "0.65",
+    "prediction": "0.65",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.65",
+          "ground_truth_normalized": "0.65",
+          "exact_string_match": true
+        },
+        "evaluation_time": 9.584426879882812e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 7.621617794036865,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "What is the probability that a randomly chosen male likes In-N-Out the best? Please round to the nearest hundredth.",
+      "ground_truth": "0.65",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_26",
+      "query_id": "26",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_27_27",
+    "dataset_name": "qrdata_original",
+    "query": "What is the probability that a randomly chosen female likes In-N-Out the best? Please round to the nearest hundredth.",
+    "ground_truth": "0.72",
+    "prediction": "0.72",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.72",
+          "ground_truth_normalized": "0.72",
+          "exact_string_match": true
+        },
+        "evaluation_time": 1.811981201171875e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 7.408276319503784,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "What is the probability that a randomly chosen female likes In-N-Out the best? Please round to the nearest hundredth.",
+      "ground_truth": "0.72",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_27",
+      "query_id": "27",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_28_28",
+    "dataset_name": "qrdata_original",
+    "query": "What is the probability that a randomly chosen person likes Umami best or that person is female? Please round to the nearest hundredth.",
+    "ground_truth": "0.51",
+    "prediction": "0.51",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.51",
+          "ground_truth_normalized": "0.51",
+          "exact_string_match": true
+        },
+        "evaluation_time": 9.298324584960938e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 7.271945953369141,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "What is the probability that a randomly chosen person likes Umami best or that person is female? Please round to the nearest hundredth.",
+      "ground_truth": "0.51",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_28",
+      "query_id": "28",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_29_29",
+    "dataset_name": "qrdata_original",
+    "query": "What is the probability that a randomly chosen male respondent or his partner has blue eyes? Please round to the nearest hundredth.",
+    "ground_truth": "0.71",
+    "prediction": "0.71",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.71",
+          "ground_truth_normalized": "0.71",
+          "exact_string_match": true
+        },
+        "evaluation_time": 3.719329833984375e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 8.068536043167114,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "What is the probability that a randomly chosen male respondent or his partner has blue eyes? Please round to the nearest hundredth.",
+      "ground_truth": "0.71",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_29",
+      "query_id": "29",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_30_30",
+    "dataset_name": "qrdata_original",
+    "query": "What is the probability that a randomly chosen male respondent with blue eyes has a partner with blue eyes? Please round to the nearest hundredth.",
+    "ground_truth": "0.68",
+    "prediction": "0.68",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.68",
+          "ground_truth_normalized": "0.68",
+          "exact_string_match": true
+        },
+        "evaluation_time": 4.315376281738281e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 8.210812330245972,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "What is the probability that a randomly chosen male respondent with blue eyes has a partner with blue eyes? Please round to the nearest hundredth.",
+      "ground_truth": "0.68",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_30",
+      "query_id": "30",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_31_31",
+    "dataset_name": "qrdata_original",
+    "query": "What is the probability of a randomly chosen male respondent with green eyes having a partner with blue eyes? Please round to the nearest hundredth.",
+    "ground_truth": "0.31",
+    "prediction": "0.31",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.31",
+          "ground_truth_normalized": "0.31",
+          "exact_string_match": true
+        },
+        "evaluation_time": 2.4080276489257812e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 9.666950941085815,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "What is the probability of a randomly chosen male respondent with green eyes having a partner with blue eyes? Please round to the nearest hundredth.",
+      "ground_truth": "0.31",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_31",
+      "query_id": "31",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_32_32",
+    "dataset_name": "qrdata_original",
+    "query": "What proportion of the sample is between 180 cm and 185 cm tall? Please round to the nearest thousandth.",
+    "ground_truth": "0.117",
+    "prediction": "0.12",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.12",
+          "ground_truth_normalized": "0.117",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 1.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 0.12,
+          "ground_truth_number": 0.117,
+          "relative_error": 0.025641025641025543
+        },
+        "evaluation_time": 0.0002510547637939453,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 11.836925268173218,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "What proportion of the sample is between 180 cm and 185 cm tall? Please round to the nearest thousandth.",
+      "ground_truth": "0.117",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_32",
+      "query_id": "32",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_33_33",
+    "dataset_name": "qrdata_original",
+    "query": "Three US adults are randomly selected. What is the probability that all three are between 180 and 185 cm tall? Please round to the nearest thousandth.",
+    "ground_truth": "0.002",
+    "prediction": "0.0",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 0.0,
+        "details": {
+          "prediction_normalized": "0.0",
+          "ground_truth_normalized": "0.002",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 0.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 0.0,
+          "ground_truth_number": 0.002,
+          "relative_error": 1.0
+        },
+        "evaluation_time": 0.00011086463928222656,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 9.566129922866821,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "Three US adults are randomly selected. What is the probability that all three are between 180 and 185 cm tall? Please round to the nearest thousandth.",
+      "ground_truth": "0.002",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_33",
+      "query_id": "33",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_34_34",
+    "dataset_name": "qrdata_original",
+    "query": "Three US adults are randomly selected. What is the probability that none are between 180 and 185 cm tall? Please round to the nearest hundredth.",
+    "ground_truth": "0.69",
+    "prediction": "0.69",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.69",
+          "ground_truth_normalized": "0.69",
+          "exact_string_match": true
+        },
+        "evaluation_time": 1.8358230590820312e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 8.863524913787842,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "Three US adults are randomly selected. What is the probability that none are between 180 and 185 cm tall? Please round to the nearest hundredth.",
+      "ground_truth": "0.69",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_34",
+      "query_id": "34",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_35_35",
+    "dataset_name": "qrdata_original",
+    "query": "Use a Poisson distribution to approximate the data. What is the event rate of the Poisson distribution? Please round to the nearest tenth.",
+    "ground_truth": "4.4",
+    "prediction": "4.4",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "4.4",
+          "ground_truth_normalized": "4.4",
+          "exact_string_match": true
+        },
+        "evaluation_time": 3.790855407714844e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 5.775342226028442,
+    "total_turns": 1,
+    "success": true,
+    "extra_info": {
+      "query": "Use a Poisson distribution to approximate the data. What is the event rate of the Poisson distribution? Please round to the nearest tenth.",
+      "ground_truth": "4.4",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_35",
+      "query_id": "35",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_36_36",
+    "dataset_name": "qrdata_original",
+    "query": "Calculate the lower bound of a 99% confidence interval for the level of American support for expanding the use of wind turbines for power generation. Please round to the nearest thousandth.",
+    "ground_truth": "0.819",
+    "prediction": "0.83",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.83",
+          "ground_truth_normalized": "0.819",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 1.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 0.83,
+          "ground_truth_number": 0.819,
+          "relative_error": 0.013431013431013444
+        },
+        "evaluation_time": 0.00017380714416503906,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 18.077450037002563,
+    "total_turns": 1,
+    "success": true,
+    "extra_info": {
+      "query": "Calculate the lower bound of a 99% confidence interval for the level of American support for expanding the use of wind turbines for power generation. Please round to the nearest thousandth.",
+      "ground_truth": "0.819",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_36",
+      "query_id": "36",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_37_37",
+    "dataset_name": "qrdata_original",
+    "query": "What is the point estimate in this case? Please round to the nearest hundredth.",
+    "ground_truth": "0.82",
+    "prediction": "0.82",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.82",
+          "ground_truth_normalized": "0.82",
+          "exact_string_match": true
+        },
+        "evaluation_time": 4.6253204345703125e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 8.878624200820923,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "What is the point estimate in this case? Please round to the nearest hundredth.",
+      "ground_truth": "0.82",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_37",
+      "query_id": "37",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_38_38",
+    "dataset_name": "qrdata_original",
+    "query": "Estimate the standard error of the point estimate from the Ebola survey. Please round to the nearest thousandth.",
+    "ground_truth": "0.012",
+    "prediction": "0.01",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 0.0,
+        "details": {
+          "prediction_normalized": "0.01",
+          "ground_truth_normalized": "0.012",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 0.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 0.01,
+          "ground_truth_number": 0.012,
+          "relative_error": 0.16666666666666666
+        },
+        "evaluation_time": 0.00022673606872558594,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 9.146163940429688,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "Estimate the standard error of the point estimate from the Ebola survey. Please round to the nearest thousandth.",
+      "ground_truth": "0.012",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_38",
+      "query_id": "38",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_39_39",
+    "dataset_name": "qrdata_original",
+    "query": "Construct a 95% confidence interval for p, the proportion of New York adults who supported a quarantine for anyone who has come into contact with an Ebola patient. Please output the lower bound of the confidence interval and round to the nearest thousandth.",
+    "ground_truth": "0.796",
+    "prediction": "0.8",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.8",
+          "ground_truth_normalized": "0.796",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 1.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 0.8,
+          "ground_truth_number": 0.796,
+          "relative_error": 0.005025125628140708
+        },
+        "evaluation_time": 9.584426879882812e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 8.458370923995972,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "Construct a 95% confidence interval for p, the proportion of New York adults who supported a quarantine for anyone who has come into contact with an Ebola patient. Please output the lower bound of the confidence interval and round to the nearest thousandth.",
+      "ground_truth": "0.796",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_39",
+      "query_id": "39",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_40_40",
+    "dataset_name": "qrdata_original",
+    "query": "Construct a 95% confidence interval for p, the proportion of New York adults who supported a quarantine for anyone who has come into contact with an Ebola patient. Please output the upper bound of the confidence interval and round to the nearest thousandth.",
+    "ground_truth": "0.844",
+    "prediction": "0.84",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.84",
+          "ground_truth_normalized": "0.844",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 1.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 0.84,
+          "ground_truth_number": 0.844,
+          "relative_error": 0.004739336492891
+        },
+        "evaluation_time": 0.00030422210693359375,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 8.513278007507324,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "Construct a 95% confidence interval for p, the proportion of New York adults who supported a quarantine for anyone who has come into contact with an Ebola patient. Please output the upper bound of the confidence interval and round to the nearest thousandth.",
+      "ground_truth": "0.844",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_40",
+      "query_id": "40",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_41_41",
+    "dataset_name": "qrdata_original",
+    "query": "Compute the upper bound of a 95% confidence interval for the fraction of college-educated adults who answered the children_with_1_or_more_vaccination question correctly. Please round to the nearest thousandth.",
+    "ground_truth": "0.358",
+    "prediction": "0.36",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.36",
+          "ground_truth_normalized": "0.358",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 1.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 0.36,
+          "ground_truth_number": 0.358,
+          "relative_error": 0.005586592178770955
+        },
+        "evaluation_time": 8.893013000488281e-05,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 7.852524042129517,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "Compute the upper bound of a 95% confidence interval for the fraction of college-educated adults who answered the children_with_1_or_more_vaccination question correctly. Please round to the nearest thousandth.",
+      "ground_truth": "0.358",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_41",
+      "query_id": "41",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_42_42",
+    "dataset_name": "qrdata_original",
+    "query": "Calculate the lower bound of the 90% confidence interval of the difference for the survival rates in the CPR study. Please round to the nearest thousandth.",
+    "ground_truth": "-0.026",
+    "prediction": "-0.03",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 0.0,
+        "details": {
+          "prediction_normalized": "-0.03",
+          "ground_truth_normalized": "-0.026",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 0.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": -0.03,
+          "ground_truth_number": -0.026,
+          "relative_error": 0.15384615384615385
+        },
+        "evaluation_time": 0.00011801719665527344,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 44.34923481941223,
+    "total_turns": 1,
+    "success": true,
+    "extra_info": {
+      "query": "Calculate the lower bound of the 90% confidence interval of the difference for the survival rates in the CPR study. Please round to the nearest thousandth.",
+      "ground_truth": "-0.026",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_42",
+      "query_id": "42",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_43_43",
+    "dataset_name": "qrdata_original",
+    "query": "Calculate the length of the 95% confidence interval for the effect of fish oils on heart attacks for patients who are well-represented by those in the study. Please round to the nearest thousandth.",
+    "ground_truth": "0.006",
+    "prediction": "0.01",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 0.0,
+        "details": {
+          "prediction_normalized": "0.01",
+          "ground_truth_normalized": "0.006",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 0.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 0.01,
+          "ground_truth_number": 0.006,
+          "relative_error": 0.6666666666666666
+        },
+        "evaluation_time": 0.00014901161193847656,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 15.079013109207153,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "Calculate the length of the 95% confidence interval for the effect of fish oils on heart attacks for patients who are well-represented by those in the study. Please round to the nearest thousandth.",
+      "ground_truth": "0.006",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_43",
+      "query_id": "43",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_44_44",
+    "dataset_name": "qrdata_original",
+    "query": "Calculate the lower bound of the 95% confidence interval for the effect of fish oils on heart attacks for patients who are well-represented by those in the study. Please round to the nearest thousandth.",
+    "ground_truth": "-0.007",
+    "prediction": "-0.01",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 0.0,
+        "details": {
+          "prediction_normalized": "-0.01",
+          "ground_truth_normalized": "-0.007",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 0.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": -0.01,
+          "ground_truth_number": -0.007,
+          "relative_error": 0.42857142857142855
+        },
+        "evaluation_time": 0.0005309581756591797,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 71.69250512123108,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "Calculate the lower bound of the 95% confidence interval for the effect of fish oils on heart attacks for patients who are well-represented by those in the study. Please round to the nearest thousandth.",
+      "ground_truth": "-0.007",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_44",
+      "query_id": "44",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_45_45",
+    "dataset_name": "qrdata_original",
+    "query": "Is this study an experiment or an observational study? Please answer with \"experiment\" or \"observational\".",
+    "ground_truth": "experiment",
+    "prediction": "2.0",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 0.0,
+        "details": {
+          "prediction_normalized": "2.0",
+          "ground_truth_normalized": "experiment",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": false
+        },
+        "evaluation_time": 0.00017499923706054688,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 14.241616010665894,
+    "total_turns": 3,
+    "success": true,
+    "extra_info": {
+      "query": "Is this study an experiment or an observational study? Please answer with \"experiment\" or \"observational\".",
+      "ground_truth": "experiment",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_45",
+      "query_id": "45",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_46_46",
+    "dataset_name": "qrdata_original",
+    "query": "Compute the absolute value of the point estimate of the difference in breast cancer death rates in the two groups. Please round to 5 decimal places.",
+    "ground_truth": "0.00012",
+    "prediction": "0.0",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 0.0,
+        "details": {
+          "prediction_normalized": "0.0",
+          "ground_truth_normalized": "0.00012",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 0.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 0.0,
+          "ground_truth_number": 0.00012,
+          "relative_error": 1.0
+        },
+        "evaluation_time": 0.00018405914306640625,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 15.696830987930298,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "Compute the absolute value of the point estimate of the difference in breast cancer death rates in the two groups. Please round to 5 decimal places.",
+      "ground_truth": "0.00012",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_46",
+      "query_id": "46",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_47_47",
+    "dataset_name": "qrdata_original",
+    "query": "Compute the standard error of the point estimate of the difference in breast cancer death rates in the two groups. Please round to 5 decimal places.",
+    "ground_truth": "0.00070",
+    "prediction": "0.0",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 0.0,
+        "details": {
+          "prediction_normalized": "0.0",
+          "ground_truth_normalized": "0.00070",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 0.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 0.0,
+          "ground_truth_number": 0.0007,
+          "relative_error": 1.0
+        },
+        "evaluation_time": 0.00038504600524902344,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 8.957018852233887,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "Compute the standard error of the point estimate of the difference in breast cancer death rates in the two groups. Please round to 5 decimal places.",
+      "ground_truth": "0.00070",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_47",
+      "query_id": "47",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_48_48",
+    "dataset_name": "qrdata_original",
+    "query": "Calculate a p-value for the hypothesis that there was no difference in breast cancer deaths in the mammogram and control groups. Please round to 4 decimal places.",
+    "ground_truth": "0.8650",
+    "prediction": "0.87",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 1.0,
+        "details": {
+          "prediction_normalized": "0.87",
+          "ground_truth_normalized": "0.8650",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 1.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 0.87,
+          "ground_truth_number": 0.865,
+          "relative_error": 0.0057803468208092535
+        },
+        "evaluation_time": 0.0002551078796386719,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 8.717257022857666,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "Calculate a p-value for the hypothesis that there was no difference in breast cancer deaths in the mammogram and control groups. Please round to 4 decimal places.",
+      "ground_truth": "0.8650",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_48",
+      "query_id": "48",
+      "done": false
+    }
+  },
+  {
+    "sample_id": "qrdata_original_qrdata_49_49",
+    "dataset_name": "qrdata_original",
+    "query": "Given the hypothesis that the higher-quality blades will pass inspection 3% more frequently than the standard-quality blades, calculate the p-value for the hypothesis. Please round to 3 decimal places.",
+    "ground_truth": "0.012",
+    "prediction": "64.0",
+    "metrics": {
+      "exact_match": {
+        "metric_name": "exact_match",
+        "score": 0.0,
+        "details": {
+          "prediction_normalized": "64.0",
+          "ground_truth_normalized": "0.012",
+          "exact_string_match": false,
+          "list_match_attempted": false,
+          "numeric_match_attempted": true,
+          "numeric_match_score": 0.0,
+          "numeric_tolerance": 0.03,
+          "prediction_number": 64.0,
+          "ground_truth_number": 0.012,
+          "relative_error": 5332.333333333333
+        },
+        "evaluation_time": 0.0002391338348388672,
+        "success": true,
+        "skipped": false
+      }
+    },
+    "execution_time": 9.646732091903687,
+    "total_turns": 2,
+    "success": true,
+    "extra_info": {
+      "query": "Given the hypothesis that the higher-quality blades will pass inspection 3% more frequently than the standard-quality blades, calculate the p-value for the hypothesis. Please round to 3 decimal places.",
+      "ground_truth": "0.012",
+      "dataset_name": "qrdata_original",
+      "metadata_id": "qrdata_49",
+      "query_id": "49",
+      "done": false
+    }
+  }
+]
